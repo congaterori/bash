@@ -23,10 +23,12 @@ doskey killall=taskkill $1.exe
 doskey pkill=taskkill $1
 doskey grep=tasklist
 doskey locate=if exist $1 echo file exist | echo file not exist
+cls
 doskey mv=REN $1 $2
 doskey df=wmic logicaldisk get size,freespace,caption
 doskey alias=doskey $1=$2
 doskey wc=FINDSTR /R /N "^.*" $1 | FIND /C ":"
+cls
 doskey cp=COPY $1 $2
 doskey connect=explorer.exe "$1"
 doskey search=start https://www.google.com/search?q=$1
