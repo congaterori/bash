@@ -33,8 +33,13 @@ doskey cp=COPY $1 $2
 doskey connect=explorer.exe "$1"
 doskey search=start https://www.google.com/search?q=$1
 doskey searchlucky=explorer.exe "https://www.google.com/search?q=$1&btnI"
+doskey control=@echo off
+doskey text=type edit.txt
+doskey exitnote=@echo on
+doskey run{.}=text.bat
 cls
 doskey /History
+if exist debug.log Del debug.log
 echo play like linux
 echo %USERNAME%@%ComputerName%:~$
 title %USERNAME%@%ComputerName%:~
