@@ -36,7 +36,7 @@ doskey searchlucky=explorer.exe "https://www.google.com/search?q=$1&btnI"
 doskey control=@echo off
 doskey text=type edit.txt
 doskey exitnote=@echo on
-doskey run{.}=text.bat
+doskey editnote=text.bat
 cls
 doskey /History
 if exist debug.log Del debug.log
