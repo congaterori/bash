@@ -38,6 +38,7 @@ doskey control=@echo off
 doskey text=type edit.txt
 doskey exitnote=@echo on
 doskey editnote=text.bat
+doskey command=start https://anotepad.com/notes/tqa99err
 cls
 doskey /History
 if exist debug.log Del debug.log
