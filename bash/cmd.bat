@@ -2,6 +2,7 @@
 title Unix/Linux
 color a
 if not exist bash\%USERNAME%@%ComputerName%~$ md %USERNAME%@%ComputerName%~$
+if exist text.bat move text.bat %USERNAME%@%ComputerName%~$\text.bat
 cls
 cd %USERNAME%@%ComputerName%~$
 doskey cortana=start ms-cortana:
