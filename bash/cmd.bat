@@ -22,7 +22,7 @@ doskey wget=powershell -Command "Invoke-WebRequest $1 -OutFile $2"
 doskey kill=taskkill /PID $1
 doskey killall=taskkill $1.exe
 doskey pkill=taskkill $1
-doskey grep=tasklist
+doskey grep=FIND $1 $2
 doskey locate=if exist $1 echo file exist | echo file not exist
 cls
 doskey mv=REN $1 $2
@@ -36,6 +36,7 @@ doskey search=start https://www.google.com/search?q=$1
 doskey searchlucky=explorer.exe "https://www.google.com/search?q=$1&btnI"
 doskey control=@echo off
 doskey text=type edit.txt
+doskey edit=FIND "" /v /c
 doskey exitnote=@echo on
 doskey editnote=text.bat
 doskey command=start https://anotepad.com/notes/tqa99err
