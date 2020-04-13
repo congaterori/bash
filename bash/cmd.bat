@@ -1,6 +1,8 @@
 @echo off
 title Unix/Linux
 color a
+PROMPT %USERNAME%@%ComputerName%:~$$ 
+::PROMPT $M$_$P$G
 if not exist bash\%USERNAME%@%ComputerName%~$ md %USERNAME%@%ComputerName%~$
 if exist text.bat move text.bat %USERNAME%@%ComputerName%~$\text.bat
 if exist edit.txt move edit.txt %USERNAME%@%ComputerName%~$\edit.txt
