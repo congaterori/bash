@@ -3,11 +3,11 @@ title Unix/Linux
 color a
 PROMPT %USERNAME%@%ComputerName%:~$$ 
 ::PROMPT $M$_$P$G
-if not exist bash\%USERNAME%@%ComputerName%~$ md %USERNAME%@%ComputerName%~$
-if exist text.bat move text.bat %USERNAME%@%ComputerName%~$\text.bat
-if exist edit.txt move edit.txt %USERNAME%@%ComputerName%~$\edit.txt
+if not exist C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\%USERNAME%@%ComputerName%~$ md C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\%USERNAME%@%ComputerName%~$
+if exist C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\text.bat move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\text.bat C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\%USERNAME%@%ComputerName%~$\text.bat
+if exist C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\edit.txt move C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\edit.txt C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\%USERNAME%@%ComputerName%~$\edit.txt
 cls
-cd %USERNAME%@%ComputerName%~$
+cd C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\%USERNAME%@%ComputerName%~$
 doskey cortana=start ms-cortana:
 doskey clear=cls
 doskey RANDOM=echo %RANDOM%
@@ -38,10 +38,10 @@ doskey connect=explorer.exe "$1"
 doskey search=start https://www.google.com/search?q=$1
 doskey searchlucky=explorer.exe "https://www.google.com/search?q=$1&btnI"
 doskey control=@echo off
-doskey text=type edit.txt
+doskey text=type C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\%USERNAME%@%ComputerName%~$\edit.txt
 doskey edit=FIND "" /v /c
 doskey exitnote=@echo on
-doskey editnote=text.bat
+doskey editnote=C:\Users\%USERNAME%\Desktop\Windows_virtual_PC_Pro\file\bash\%USERNAME%@%ComputerName%~$\text.bat
 doskey command=start https://anotepad.com/notes/tqa99err
 cls
 doskey /History
