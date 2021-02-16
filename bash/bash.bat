@@ -1,3 +1,3 @@
 @echo off
-start cmd /k cd Desktop && cmd.bat
+start cmd /k cmd.bat
 exit
