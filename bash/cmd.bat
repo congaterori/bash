@@ -43,7 +43,7 @@ doskey edit=FIND "" /v /c
 doskey exitnote=@echo on
 doskey editnote=text.bat
 doskey command=start https://anotepad.com/notes/tqa99err
-doskey cat=type $1
+doskey cat=type "$*"
 cls
 doskey /History
 if exist debug.log Del debug.log
